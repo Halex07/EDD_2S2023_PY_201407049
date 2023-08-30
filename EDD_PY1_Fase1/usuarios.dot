@@ -1,0 +1,22 @@
+digraph Usuarios {
+  "BDEV-1" [label="juan\nDeveloper Backend"];
+  "" [label=" Nombre\n Puesto; ; ; "];
+  "" [label="Leondardo\n Frontend Developer;;;"];
+  "" [label=" Cristian\n Backend Developer;;;"];
+  "" [label=" Mat\n Quality;;;"];
+  "QA-1" [label="Mateo\nQuality"];
+  subgraph fila1 {
+    label="Fila 1";
+    "BDEV-1";
+    "";
+    "";
+    "";
+    "";
+    "QA-1";
+  }
+  "BDEV-1" -> "";
+  "" -> "";
+  "" -> "";
+  "" -> "";
+  "" -> "QA-1";
+}
